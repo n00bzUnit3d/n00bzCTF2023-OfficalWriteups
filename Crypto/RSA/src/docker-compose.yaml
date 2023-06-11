@@ -1,0 +1,10 @@
+version: '3'
+services:
+  rsa:
+    build:
+      context: .
+    image: rsa
+    working_dir: /home/ctf
+    container_name: crypto_rsa
+    ports:
+      - "2069:2069"

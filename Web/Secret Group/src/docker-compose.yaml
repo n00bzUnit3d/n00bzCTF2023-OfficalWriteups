@@ -1,0 +1,10 @@
+version: '3'
+services:
+  secretgroup:
+    build:
+      context: .
+    image: secretgroup
+    working_dir: /home/ctf
+    container_name: web_secretgroup
+    ports:
+      - "31401:31401"

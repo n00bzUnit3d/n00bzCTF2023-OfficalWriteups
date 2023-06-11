@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+a {
+    @apply text-blue-500 underline hover:text-blue-800
+}
+
+figcaption {
+    @apply text-sm text-slate-800
+}
+@tailwind utilities;

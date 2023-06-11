@@ -1,0 +1,10 @@
+version: '3'
+services:
+  strings:
+    build:
+      context: .
+    image: strings
+    working_dir: /home/ctf
+    container_name: pwn_strings
+    ports:
+      - "7150:7150"

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  robots:
+    build:
+      context: .
+    image: robots
+    working_dir: /home/ctf
+    container_name: web_robots
+    ports:
+      - "36083:36083"

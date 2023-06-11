@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pwn2:
+    build:
+      context: .
+    image: pwn2
+    working_dir: /home/ctf
+    container_name: pwn_pwn2
+    ports:
+      - "61223:61223"

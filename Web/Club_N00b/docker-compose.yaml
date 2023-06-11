@@ -1,0 +1,12 @@
+version: '3'
+services:
+  club_noob:
+    build:
+      context: .
+    image: club_noob
+    working_dir: /home/ctf
+    container_name: club_noob
+    ports:
+      - "8080:8080"
+    environment:
+      - FLAG=n00bz{see_you_in_the_club_acting_real_nice}

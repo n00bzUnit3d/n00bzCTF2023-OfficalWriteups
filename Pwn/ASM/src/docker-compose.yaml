@@ -1,0 +1,10 @@
+version: '3'
+services:
+  asm:
+    build:
+      context: .
+    image: asm
+    working_dir: /home/ctf
+    container_name: pwn_asm
+    ports:
+      - "38894:38894"

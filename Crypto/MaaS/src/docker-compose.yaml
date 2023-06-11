@@ -1,0 +1,10 @@
+version: '3'
+services:
+  maas:
+    build:
+      context: .
+    image: maas
+    working_dir: /home/ctf
+    container_name: crypto_maas
+    ports:
+      - "51081:51081"

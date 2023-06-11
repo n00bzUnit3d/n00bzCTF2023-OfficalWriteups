@@ -1,0 +1,10 @@
+version: '3'
+services:
+  caas:
+    build:
+      context: .
+    image: caas
+    working_dir: /home/ctf
+    container_name: web_caas
+    ports:
+      - "52130:52130"

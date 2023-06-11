@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club N00b</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        window.onload = function () {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById("flagText").textContent = params.get("flag") ?? "error retrieving flag from query param, please contact admin(0xBlue)";
+        }
+    </script>
+
+</head>
+<body class="bg-slate-300">
+    <div class="py-5 my-2">
+        <figure>
+            <img class="w-80 h-60 mx-auto" src="https://images.unsplash.com/photo-1581417478175-a9ef18f210c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="people with hands up at nightclub">
+            <figcaption class="mx-auto w-fit">Photo by <a href="https://unsplash.com/photos/Y5PXVs1LpY4">Long Truong</a> on <a href="https://unsplash.com/">Unsplash</a></figcaption>
+        </figure>
+        <h2 class="w-80 mx-auto text-center mt-1">You <b class="text-green-800">are</b> on the guest list!</h2>
+        <p class="w-fit mx-auto text-center mt-3">As a special sign-up bonus, here's the flag:</p>
+        <p class="w-fit mx-auto text-center mt-4 px-5 py-2 rounded-sm bg-slate-400 border border-gray-800" id="flagText"></p>
+    </div>
+</body>
+</html>

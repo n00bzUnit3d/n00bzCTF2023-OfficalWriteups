@@ -1,0 +1,10 @@
+version: '3'
+services:
+  flagshop:
+    build:
+      context: .
+    image: flagshop
+    working_dir: /home/ctf
+    container_name: pwn_flagshop
+    ports:
+      - "50267:50267"

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  conditions:
+    build:
+      context: .
+    image: conditions
+    working_dir: /home/ctf
+    container_name: web_conditions
+    ports:
+      - "42552:42552"
