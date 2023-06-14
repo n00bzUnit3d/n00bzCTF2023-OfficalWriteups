@@ -4,5 +4,6 @@
 - Note: Flag is all lowercase, <b>there are no numbers!</b>
 
 # Writeup
+It is an SSTV, using QSSTV to decode it back yields the flag!
 
-To be added once writeup verification is finished
+# Flag - n00bz{beep_bop_you_found_me!}

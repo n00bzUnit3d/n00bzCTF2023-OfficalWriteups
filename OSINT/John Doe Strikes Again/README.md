@@ -4,4 +4,6 @@ Description - John Doe has escaped our high secruity prison again! We managed to
 
 # Writeup
 
-Writeup to be released once writeup verification is over.
+Xor the message with the secret key and you get a conversation between John Doe and his assitant. John Doe says he loves music, so your aim is to find his account on a music-related platform. When going through the list of music-related platforms, you find an account on Spotify! You can confirm that it's the right account because the playlist name is the same as the secret key! The description for the playlist is also some encrypted data. Decrypting it the same way, you get - "I have an amazing profile picture don't you think?". The profile picture is the discord logo, hence you should go to discord. Going to the n00bzCTF discord server, you find John Doe's account. The account's about me says "Busy doing n00bzCTF, check out my profile!". Going to n00bzCTF ctf website -> users -> John Doe, you find that he is in a team and the team name is encrypted. Decrypting the team name you get "Think Way Back" so using the WayBack Machine you find a website added to John Doe's profile. Visiting the website you get another encrypted message and decrypting it gives you the flag!
+
+# Flag - n00bz{n0_0n3_c4n_3sc4p3_MR.051N7,_n0t_3v3n_J0HN_D03!}
